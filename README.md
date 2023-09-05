@@ -18,8 +18,6 @@
 
   - [Git Revert](#git-revert)
 
-- [Summary](#summary)
-
 # Git Repository
 
 Git initialization:
@@ -246,9 +244,3 @@ After running this command, Git will create a new commit (let's call it E) that 
 ```sh
 A -- B -- C -- D -- E (HEAD)
 ```
-
-# Summary
-
-![Image](./summary.png)
-
-Image Credit : [@AngelaYu](https://www.londonappbrewery.com/)
