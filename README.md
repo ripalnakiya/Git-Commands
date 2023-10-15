@@ -18,12 +18,20 @@
 
   - [Git Revert](#git-revert)
 
+- [Git Subtree](#git-subtree)
+
 # Git Repository
 
 Git initialization:
 
 ```sh
 git init
+```
+
+Delet the Initialized git repository: (This will remove the version control system)
+
+```sh
+rm -rf .git
 ```
 
 Display the status of git repository:
@@ -243,4 +251,14 @@ After running this command, Git will create a new commit (let's call it E) that 
 
 ```sh
 A -- B -- C -- D -- E (HEAD)
+```
+
+# Git Subtree
+
+Git subtree is a feature in Git that allows you to embed one Git repository within another as a subdirectory.
+
+This is useful when you want to include another repository's content into your own project, while still keeping them separate, and track changes to the embedded repository as part of your project's history.
+
+```sh
+git subtree add --prefix=subdir-name remote-repo.git branch-name
 ```
