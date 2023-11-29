@@ -1,5 +1,3 @@
-### This repository contains useful commands of Git
-
 # Table of Contents
 
 - [Repository](#git-repository)
@@ -12,13 +10,15 @@
 
 - [Git Checkout](#git-checkout)
 
-- [Reverting Changes](#reverting-changes)
+- [Reversing Changes](#reversing-changes)
 
   - [Git Clean](#git-clean)
 
   - [Git Revert](#git-revert)
 
 - [Git Subtree](#git-subtree)
+
+- [Summary](#summary)
 
 # Git Repository
 
@@ -144,7 +144,7 @@ git checkout <branch-name>
 
 This command will update your working directory to the latest commit on the specified branch.
 
-# Reverting Changes
+# Reversing Changes
 
 ```sh
 git reset [options] <commit-hash>
@@ -204,6 +204,11 @@ A -- B (HEAD)
 
 Commits C and D are effectively "discarded," and their changes are lost.
 
+> Note : We might want to update the remote repository with the changes we made in the local repository.
+>
+> To do so we can use the following command:
+> `git push --force origin <branch-name>`
+
 ---
 
 ## Git Clean
@@ -262,3 +267,7 @@ This is useful when you want to include another repository's content into your o
 ```sh
 git subtree add --prefix=subdir-name remote-repo.git branch-name
 ```
+
+# Summary
+
+![Summary](./Images/summary.png)
